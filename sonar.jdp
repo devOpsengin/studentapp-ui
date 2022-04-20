@@ -12,7 +12,7 @@ pipeline {
                     }
         }
          stage('test') { 
-            steps { withSonarQubeEnv(credentialsId: 'sonarqubetoken') {
+            steps { withSonarQubeEnv(credentialsId: '15') {
                 sh 'mvn sonar:sonar'
                 }
                
